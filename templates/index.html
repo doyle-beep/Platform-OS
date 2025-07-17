@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Diagnostics
+{% endblock %}
+
+
+
+{% block content %}
+
+    <h1>Platform</h1>
+    <p>
+        {% for c in plat %}
+            {{ c[0] }}{{ c[1] }}<br>
+        {% endfor %}
+    </p>
+
+    <hr>
+
+    <h1>OS</h1>
+    <p>
+        {% for o in osc %}
+            {{ o[0] }}{{ o[1] }}<br>
+        {% endfor %}
+    </p>
+
+    <hr>
+
+    <h1>SYS</h1>
+    <p>
+        {% for s in s %}
+            {{ s[0] }}{{ s[1] }}<br>
+        {% endfor %}
+    </p>
+
+{% endblock %}
+
